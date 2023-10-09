@@ -1,0 +1,21 @@
+{
+    "name": "it-montana-llc/mra12",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "http://www.mtracquetball.org",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^13.0 || ^14.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ItMontanaLlc\\Mra12\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "mra12"
+        }
+    }
+}

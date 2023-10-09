@@ -1,2 +1,4 @@
-# mra12
-mra typo3 12 package
+Sitepackage for the project "mra12"
+==============================================================
+
+Add some explanation here.
