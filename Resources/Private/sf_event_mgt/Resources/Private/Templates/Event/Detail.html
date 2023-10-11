@@ -127,15 +127,17 @@
 			<div class="clear"></div>
 		</div>
 
-		<div class="event-detail-row">
-			<div class="event-detail-label">
-				<f:translate key="tx_sfeventmgt_domain_model_event.freePlaces" />
+		<f:if condition='{event.freePlaces} != 0'>
+			<div class="event-detail-row">
+				<div class="event-detail-label">
+					<f:translate key="tx_sfeventmgt_domain_model_event.freePlaces" />
+				</div>
+				<div class="event-detail-value event-freePlaces">
+					{event.freePlaces}
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="event-detail-value event-freePlaces">
-				{event.freePlaces}
-			</div>
-			<div class="clear"></div>
-		</div>
+		</f:if>
 
 		<f:if condition='{event.enableWaitlist}'>
 			<div class="event-detail-row">
@@ -156,7 +158,7 @@
 						<f:translate key="event.freeofcharge" />
 					</f:then>
 					<f:else>
-						{event.currentPrice} {event.currency}
+						${event.currentPrice} {event.currency}
 					</f:else>
 				</f:if>
 			</div>
