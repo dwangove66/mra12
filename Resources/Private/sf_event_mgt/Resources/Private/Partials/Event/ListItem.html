@@ -12,29 +12,30 @@
         </h2>
     </div>
     <div class="event-list-row">
-        <div class="event-list-label">
+        <!-- <div class="event-list-label">
             <f:translate key="tx_sfeventmgt_domain_model_event.teaser"/>
-        </div>
+        </div> -->
         <div class="event-list-value event-teaser">
             {event.teaser}
         </div>
     </div>
     <div class="event-list-row">
         <div class="event-list-label">
-            <f:translate key="tx_sfeventmgt_domain_model_event.startdate"/>
+            <!-- <f:translate key="tx_sfeventmgt_domain_model_event.startdate"/> -->
+            Date: <f:format.date format="%d.%m.%Y - %H:%M">{event.startdate}</f:format.date> - <f:translate key="tx_sfeventmgt_domain_model_event.enddate"/>
         </div>
-        <div class="event-list-value event-startdate">
+<!--         <div class="event-list-value event-startdate">
             <f:format.date format="%d.%m.%Y - %H:%M">{event.startdate}</f:format.date>
-        </div>
+        </div> -->
     </div>
-    <div class="event-list-row">
+<!--     <div class="event-list-row">
         <div class="event-list-label">
             <f:translate key="tx_sfeventmgt_domain_model_event.enddate"/>
         </div>
         <div class="event-list-value event-enddate">
             <f:format.date format="%d.%m.%Y - %H:%M">{event.enddate}</f:format.date>
         </div>
-    </div>
+    </div> -->
     <f:if condition="{event.maxParticipants} > 0">
         <div class="event-list-row">
             <div class="event-list-label">
