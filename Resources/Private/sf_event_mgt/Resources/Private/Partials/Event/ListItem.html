@@ -18,7 +18,7 @@
     </div>
     <div class="event-list-row">
         <div class="event-list-value event-startdate">
-           Date: <f:format.date format="m.d.Y - h:i A">{event.startdate}</f:format.date> - <f:format.date format="%m.%d.%Y - h:i A">{event.enddate}</f:format.date>
+           Date: <f:format.date format="m.d.Y - h:i A">{event.startdate}</f:format.date> - <f:format.date format="m.d.Y - h:i A">{event.enddate}</f:format.date>
         </div>
     </div>
     <f:if condition="{event.maxParticipants} > 0">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </f:if>
-    <div class="event-list-row">
+    <!-- <div class="event-list-row">
         <div class="event-list-label">
             <f:translate key="tx_sfeventmgt_domain_model_event.price"/>
         </div>
@@ -56,8 +56,8 @@
             </f:if>
         </div>
         <div class="clear"></div>
-    </div>
-    <f:if condition="{event.location.title}">
+    </div> -->
+    <!-- <f:if condition="{event.location.title}">
         <div class="event-list-row">
             <div class="event-list-label">
                 <f:translate key="tx_sfeventmgt_domain_model_event.location"/>
@@ -77,5 +77,5 @@
                 </f:if>
             </f:if>
         </div>
-    </div>
+    </div> -->
 </div>
