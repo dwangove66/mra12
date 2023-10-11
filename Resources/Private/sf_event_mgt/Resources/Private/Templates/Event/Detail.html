@@ -49,7 +49,7 @@
 
 		<div class="event-detail-row">
 			<div class="event-detail-label">
-				<f:translate key="tx_sfeventmgt_domain_model_event.location" /> Location:
+				<f:translate key="tx_sfeventmgt_domain_model_event.location" />:
 			</div>
 			<div class="event-detail-value event-location-title">
 				{event.location.title}
@@ -66,7 +66,7 @@
 
 		<div class="event-detail-row">
 			<div class="event-detail-value event-location-city">
-				{event.location.city}, {event.location.zip}
+				{event.location.city}, {event.location.zip} {event.location.country}
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -79,16 +79,6 @@
 				<div class="clear"></div>
 			</div>
 		</f:if>
-
-		<div class="event-detail-row">
-			<div class="event-detail-label">
-				<f:translate key="tx_sfeventmgt_domain_model_event.location" /> <f:translate key="tx_sfeventmgt_domain_model_event.location.country" />
-			</div>
-			<div class="event-detail-value event-location-country">
-				{event.location.country}
-			</div>
-			<div class="clear"></div>
-		</div>
 
 		<div class="event-detail-row">
 			<div class="event-detail-label">
