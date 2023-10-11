@@ -65,9 +65,6 @@
 		</div>
 
 		<div class="event-detail-row">
-			<div class="event-detail-label">
-				<f:translate key="tx_sfeventmgt_domain_model_event.location" /> <f:translate key="tx_sfeventmgt_domain_model_event.location.city" />
-			</div>
 			<div class="event-detail-value event-location-city">
 				{event.location.city}, {event.location.zip}
 			</div>
@@ -282,7 +279,7 @@
 			</div>
 		</f:if>
 
-		<f:link.typolink parameter="t3://page?uid=4" additionalAttributes="{type:'button'}" class="btn btn-primary"><strong>Back</strong></f:link.typolink>
+		<a href="t3://page?uid=4" type="button" class="btn btn-primary"><strong>Back</strong></a>
 		<f:if condition="{event.registrationPossible}">
 			<f:if condition="{settings.registrationPid} !=''">
 				<f:link.action action="registration" arguments="{event : event}" pageUid="{settings.registrationPid}" class="button">
