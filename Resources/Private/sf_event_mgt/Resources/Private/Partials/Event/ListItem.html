@@ -18,7 +18,7 @@
     </div>
     <div class="event-list-row">
         <div class="event-list-value event-startdate">
-           Date: <f:format.date format="%m.%d.%Y - h:i A">{event.startdate}</f:format.date> - <f:format.date format="%m.%d.%Y - h:i A">{event.enddate}</f:format.date>
+           Date: <f:format.date format="m.d.Y - h:i A">{event.startdate}</f:format.date> - <f:format.date format="%m.%d.%Y - h:i A">{event.enddate}</f:format.date>
         </div>
     </div>
     <f:if condition="{event.maxParticipants} > 0">
